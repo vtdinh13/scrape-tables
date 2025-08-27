@@ -1,5 +1,5 @@
 # Scrape Tables From Webpages
-This repository provides an alternative solution to the pandas `pd.read_html()` function, used to scrape tables from web pages. There are two ways to execute the script:
+This guide provides an alternative solution when the pandas `pd.read_html()` function fails to scrape tables from web pages. You can execute the script in two ways:
 1. On the command line: `python3 scrape_tables.py --url='your_url.com'`. Here is an example:
 ![Example on command line](images/scrape-tables.gif)
 
