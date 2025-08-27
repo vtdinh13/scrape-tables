@@ -10,8 +10,10 @@ import argparse
 def ingest_data(url:str) -> BeautifulSoup:
 
     service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service)
-
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    driver = webdriver.Chrome(service=service, options=options)
+    
     driver.get(url)
 
     # Retrieve contents of webpage as a string
